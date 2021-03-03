@@ -1,0 +1,124 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html,
+body {
+    font-family: Montserrat;
+    font-weight: 300;
+    height: 100vh;
+}
+
+/*-----------Headings-------------------*/
+
+h1{
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 150%;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 120%;
+}
+
+h2:after {
+  display: block;
+  height: 1px;
+  background-color: #8a8a8a;
+  content: " ";
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*-----------Misc-------------------*/
+
+p {
+  margin-bottom: 10px;
+}
+
+.width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+input[type=number],
+.gender
+ {
+    width: 80%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #f4f4f4;
+    margin-bottom: 5px;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+/*-----------Main Page-------------------*/
+.center {
+  text-align: center;
+}
+
+.classification{
+  float:left;
+  width: 50%;
+  text-align: center;
+}
+.bmi {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+.title-text {
+  padding-top: 30px;
+}
+
+input[type=submit]{
+  margin-top: 5px;
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: #d0d0d0;
+  border: 1px solid #d0d0d0;
+  color: #000;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+input[type=submit]:hover, input[type=submit]:active {
+  background-color: #cf6d17;
+}
+
+
+
+.bottom-box {
+  display: block;
+  margin-top: 30px;
+  height: auto;
+}
+/*-----------Weight classes-------------------*/

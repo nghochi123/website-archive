@@ -1,0 +1,24 @@
+.submaintext {
+    margin-top: 40px;
+    text-align: center;
+    text-transform:uppercase;
+    margin-bottom: 40px;
+}
+
+.submaintext::after {
+    display: block;
+    height: 3px;
+    background-color: #2980b9;
+    content: " ";
+    width: 600px;
+    margin: 5px auto 15px auto;
+}
+
+.text{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.link:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,170 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html,
+body {
+    font-family: Montserrat;
+    font-weight: 300;
+    height: 100vh;
+}
+
+body {
+  background-color: rgb(83, 83, 83);
+}
+
+.center {
+  text-align: center;
+}
+
+.width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title-text {
+  padding-top: 15px;
+}
+
+.title-text h1,
+.title-text p {
+  color: #fff;
+}
+
+/*-----------Headings-------------------*/
+
+h1{
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 150%;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 120%;
+}
+
+h2:after {
+  display: block;
+  height: 1px;
+  background-color: #8a8a8a;
+  content: " ";
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*----------Main Page-------------------*/
+
+.wrapper {
+  width: 1000px;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.player1 {
+  height: 100%;
+  width: 50%;
+  margin:0;
+  background-color: #e7e7e7;
+}
+
+.player2 {
+  height: 100%;
+  width: 50%;
+  margin:0;
+  background-color: #ffffff;
+}
+
+.player1 p,
+.player2 p {
+  margin-top: 15px;
+}
+
+.hand {
+  height: 150px;
+  width: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.player1 label img {
+  height: 70px; width: 55px;
+}
+
+
+.bestof {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.score {
+  font-weight: 300;
+  font-size: 200%;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.p1, .ai {
+  font-weight: 100;
+  font-size: 400%;
+}
+
+/*---------Buttons------------*/
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+button:hover { font-weight: 600; }
+
+.btn-new { top: 45px;}
+.btn-go { top: 403px;}
+
+
+/*--------------Radio Buttons------------*/
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 1px solid #f00;
+}

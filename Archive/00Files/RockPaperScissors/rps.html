@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="rps_style.css">
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <div class="row width">
+      <div class="center title-text">
+        <h1>Rock Paper Scissors Game</h1>
+        <p>Type the Best-of Score at the bottom, then click New Game to Start</p>
+      </div>
+    </div>
+    <div class="wrapper clearfix">
+      <div class="player1 col span-1-of-2 center">
+        <p class="p1">Player 1</p>
+        <img src="rock.png" alt="hand1" class="hand" id="hand-1">
+        <br>
+        <label>
+          <input type="radio" class="rps" name="rps" value="rock" checked>
+          <img src="rock.png">
+        </label>
+        <label>
+          <input type="radio" class="rps" name="rps" value="paper">
+          <img src="paper.png">
+        </label>
+        <label>
+          <input type="radio" class="rps" name="rps" value="scissors">
+          <img src="scissors.png">
+        </label>
+        <button class="btn-new">New game</button>
+        <button class="btn-go">Go</button>
+        <div class="score center">Score:<br>0-0</div>
+      </div>
+
+      <div class="player2 col span-1-of-2 center">
+        <p class="ai">AI</p>
+        <img src="rock.png" alt="hand2" class="hand" id="hand-2">
+      </div>
+    </div>
+    <div class="bestof">
+      <input type="text" placeholder="Best Of" class="best-of center">
+    </div>
+
+
+    <script src="rps_app.js"></script>
+  </body>
+</html>
