@@ -2,7 +2,7 @@
   "name": "hcwebpage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nghochi123.github.io/hcwebpage",
+  "homepage": "https://nghochi123.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
@@ -49,5 +49,10 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
