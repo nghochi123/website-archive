@@ -26,7 +26,7 @@ const Projects = props => {
                 </Row>
                 <br/>
                 <Row>
-                    <Col><ProjectCard img={websiteImg} link="https://nghochi123.github.io/Archive/" title="Old Personal Webpage" text="My old webpage made with HTML, CSS and Bootstrap" /></Col>
+                    <Col><ProjectCard img={websiteImg} link="https://nghochi123.github.io/" title="Old Personal Webpage" text="My old webpage made with HTML, CSS and Bootstrap" /></Col>
                     <Col><ProjectCard img={asciiImg} link="https://www.youtube.com/watch?v=7qHKRo7rqhQ" title="Video to ASCII converter" text="Made a script with Python to convert frames into images and spam them in command line to simulate playing a video"/></Col>
                     <Col><ProjectCard img={sushiImg} link="https://www.youtube.com/watch?v=1PBlQ11OJVU" title="Sushi bot" text="Made a simple bot with Python to play Sushi Go Round."/></Col>
                 </Row>
