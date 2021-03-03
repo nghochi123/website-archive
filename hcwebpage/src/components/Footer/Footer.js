@@ -8,7 +8,7 @@ const Footer = (props) => {
         <Container>
             <Row>
                 <Col><p className="footer-p">Created by Ho Chi</p></Col>
-                <Col><p className="alignRight">2020</p></Col>
+                <Col><p className="alignRight">2021</p></Col>
             </Row>
         </Container>
         
