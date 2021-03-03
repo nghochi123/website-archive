@@ -1,0 +1,53 @@
+.submaintext {
+    margin-top: 40px;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+.submaintext::after {
+    display: block;
+    height: 3px;
+    background-color: #2980b9;
+    content: " ";
+    width: 600px;
+    margin: 5px auto 30px auto;
+}
+
+.col {
+    text-align: center;
+}
+
+.cont {
+    max-width: 600px;
+}
+
+.icon {
+    font-size: 350%;
+}
+
+.github{
+    color: #6e5494;
+}
+
+.github:hover {
+    color: #402a61
+}
+
+.mail{
+    color: #333;
+}
+.mail:hover{
+    color: rgb(0, 0, 0);
+}
+
+.linkedin{
+    color: #0077b5;
+}
+
+.linkedin:hover{
+    color: #0300b5;
+}
+
+.journal{
+    color: #bd2c00;
+}

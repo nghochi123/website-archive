@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+.content{
+  padding-bottom:20px;
+}
+
+.listOdd, .listEven{
+    list-style:none;
+    position:relative;
+    width:50%;
+    padding:20px 40px;
+    box-sizing:border-box;
+}
+
+.listOdd{
+    float:left;
+    text-align:right;
+    clear:both;
+}
+.listEven{
+    float:right;
+    text-align:left;
+    clear:both;
+}
+.listOdd:before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:#2980b9;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #3498db4f;
+}
+.listEven:before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:#2980b9;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #3498db4f;
+}
+.listOdd h3, .listEven h3{
+  padding:0;
+  margin:0;
+  color:#2980b9;
+  font-weight:600;
+}
+.listOdd p, .listEven p{
+  margin:10px 0 0;
+  padding:0;
+  word-break: break-all;
+}
+
+.timeOdd p, .timeEven p{
+    margin:0;
+    padding:0;
+    font-size:14px !important;
+    font-weight: 300;
+  }
+.timeOdd
+  {
+    position:absolute;
+    top:12px;
+    right:-165px;
+    margin:0;
+    padding:8px 16px;
+    background:#2980b9; 
+    color:#fff;
+    border-radius:18px;
+    box-shadow:0 0 0 3px #3498db4f;
+  }
+.timeEven
+  {
+    position:absolute;
+    top:12px;
+    left:-165px;
+    margin:0;
+    padding:8px 16px;
+    background:#2980b9;
+    color:#fff;
+    border-radius:18px;
+    box-shadow:0 0 0 3px #3498db4f;
+  }
+
+@media(max-width:767px){
+
+  .timeOdd, .timeEven{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+  .listOdd,
+  .listEven
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .listOdd:before,
+  .listEven:before
+  {
+    top:-18px;
+    left:16px;
+  }
+}

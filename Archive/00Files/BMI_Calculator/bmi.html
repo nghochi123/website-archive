@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+
+    <title>BMI Measurer</title>
+  </head>
+
+  <body>
+    <div class="row width">
+      <div class="center title-text"><h1>BMI MEASURER</h1></div>
+    </div>
+    <div class="row width">
+      <div class="col span-1-of-2 box information">
+        <!---This shall be the information fields-->
+        <div class="classification">
+          <h2>Category</h2>
+          <div class="uw"><p>Underweight</p></div>
+          <div class="nw"><p>Normal weight</p></div>
+          <div class="ow"><p>Overweight</p></div>
+          <div class="o1"><p>Class I Obesity</p></div>
+          <div class="o2"><p>Class II Obesity</p></div>
+          <div class="o3"><p>Class III Obesity</p></div>
+        </div>
+        <div class="bmi">
+          <h2>BMI range - kg/m<sup>2</sup></h2>
+          <div class="uw"><p>&lt;18.5</p></div>
+          <div class="nw"><p>18.5-24.9</p></div>
+          <div class="ow"><p>25.0-29.9</p></div>
+          <div class="o1"><p>30.0-34.9</p></div>
+          <div class="o2"><p>35.0-39.9</p></div>
+          <div class="o3"><p>≥40.0</p></div>
+        </div>
+      </div>
+      <div class="col span-1-of-2 box">
+        <!---This shall be the input fields-->
+        <div class="input-field">
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="gender">Gender</label>
+            </div>
+            <select class="gender" id="gender">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="age">Age</label>
+            </div>
+            <input type="number" id="age" class="age-value" placeholder="Age">
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="height">Height / cm</label>
+            </div>
+            <input type="number" id="height" class="height-value" placeholder="Height">
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="weight">Weight / kg</label>
+            </div>
+            <input type="number" id="weight" class="weight-value" placeholder="Weight">
+          </div>
+          <div class="row">
+            <input type="submit" class="calculate-btn" value="Calculate">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-box">
+      <div class="row center">
+        <h1 class="bmi-value">Your BMI is: </h1>
+      </div>
+    </div>
+
+
+    <script src="apps.js"></script>
+  </body>
+
+
+</html>
