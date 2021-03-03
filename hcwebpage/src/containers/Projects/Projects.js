@@ -12,6 +12,7 @@ import asciiImg from '../../resources/ascii.png';
 import burgerImg from '../../resources/burger.png';
 import expressImg from '../../resources/expressheroku.png';
 import sushiImg from '../../resources/sushi.png';
+import graphImg from '../../resources/graph.png';
 
 
 const Projects = props => {
@@ -29,6 +30,10 @@ const Projects = props => {
                     <Col><ProjectCard img={websiteImg} link="https://nghochi123.github.io/" title="Old Personal Webpage" text="My old webpage made with HTML, CSS and Bootstrap" /></Col>
                     <Col><ProjectCard img={asciiImg} link="https://www.youtube.com/watch?v=7qHKRo7rqhQ" title="Video to ASCII converter" text="Made a script with Python to convert frames into images and spam them in command line to simulate playing a video"/></Col>
                     <Col><ProjectCard img={sushiImg} link="https://www.youtube.com/watch?v=1PBlQ11OJVU" title="Sushi bot" text="Made a simple bot with Python to play Sushi Go Round."/></Col>
+                </Row>
+                <br/>
+                <Row>
+                    <Col sm="4"><ProjectCard img={graphImg} title="Data analysis and Graph plotting" text="Created graphs in Python with Numpy, Matplotlib and Seaborn libraries. No link here."/></Col>
                 </Row>
                 <p className={styles.text}>All the stuff here and more random stuff can be found in my <a className={styles.link} href="https://github.com/nghochi123">GitHub</a></p>
             </Container>         

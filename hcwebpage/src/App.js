@@ -42,10 +42,13 @@ function App() {
       </animated.div>
     )})
   )
-  let height = null;
+  let height = "960px";
   let path = null;
   if(location.pathname === "/about"){
     height = "1985px";
+  }
+  if(location.pathname==="/projects"){
+    height = "990px";
   }
   if(location.pathname === "/"){
     path = "home";
