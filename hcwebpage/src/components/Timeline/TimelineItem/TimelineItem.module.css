@@ -54,7 +54,6 @@
 .listOdd p, .listEven p{
   margin:10px 0 0;
   padding:0;
-  word-break: break-all;
 }
 
 .timeOdd p, .timeEven p{

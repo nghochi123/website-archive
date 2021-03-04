@@ -12,8 +12,9 @@ const Home = props => {
     return (
         <Layout>
             <Container>
+                <img className={styles.as} src={image} alt=""/>
                 <Row>
-                    <Col><img className={styles.image} src={image} alt=""/></Col>
+                    <Col className={styles.ds}><img className={styles.image} src={image} alt=""/></Col>
                     <Col className={styles.flex}>
                         <p className={styles.HomeText}>Hi, I'm Ho Chi</p>
                         <p className={styles.text}>I'm an incoming undergraduate at Nanyang Technological University studying Computer Science 

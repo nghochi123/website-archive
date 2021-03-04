@@ -51,3 +51,14 @@
 .journal{
     color: #bd2c00;
 }
+
+@media(max-width:767px){
+    .submaintext {
+        margin-top: 10px;
+        font-size: 25px;
+        text-transform:uppercase;
+    }
+    .submaintext::after {
+        width: 250px;
+    }
+}

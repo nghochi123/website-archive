@@ -93,9 +93,8 @@ h1{
     width:100%;
     padding-bottom:0;
   }
-  h1{
-    font-size:40px;
-    text-align:center;
+  h3 {
+    font-size: 15px;
   }
   .timeline:before{
     left:20px;
@@ -120,3 +119,4 @@ h1{
 .clearBoth {
     clear:both;
 }
+

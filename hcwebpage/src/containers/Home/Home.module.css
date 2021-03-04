@@ -12,14 +12,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-/* .button {
-    width: 70%;
-    height: 70px;
-    border-radius: 50px;
-    border-color: #2980b9;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}*/
-
 .text {
     font-size: 22.5px;
     text-align: center;
@@ -29,4 +21,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.as {
+    display: none;
+}
+
+@media(max-width:767px){
+    .ds {
+        display: none;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .HomeText {
+        font-size: 25px;
+    }
+    .as {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+    }
 }

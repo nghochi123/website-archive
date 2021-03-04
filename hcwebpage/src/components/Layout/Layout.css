@@ -16,3 +16,23 @@
 .larger {
     max-width: 1200px;
 }
+
+@media(max-width:767px){
+    .layout-container{
+        max-width: 600px;
+        width: 600px;
+        padding: auto;
+        left: auto;
+        margin: auto;
+    }
+}
+
+@media(max-width:480px){
+    .layout-container{
+        max-width: 360px;
+        width: 360px;
+        padding: auto;
+        left: auto;
+        margin: auto;
+    }
+}

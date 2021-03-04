@@ -46,3 +46,12 @@
 .a:hover {
     color: inherit;
 }
+
+@media(max-width:480px)
+{
+.card {
+    width: 300px;
+    justify-content: center;
+}
+
+}

@@ -5,3 +5,7 @@
 .alignRight {
     text-align: right;
 }
+@media(max-width:767px){
+    .footer-p::after{
+    }
+}

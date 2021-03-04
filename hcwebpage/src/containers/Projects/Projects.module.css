@@ -22,3 +22,20 @@
 .link:hover {
     text-decoration: none;
 }
+
+@media(max-width:767px){
+    .text{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .submaintext {
+        margin-top: 10px;
+        font-size: 25px;
+        text-transform:uppercase;
+    }
+    .submaintext::after {
+        width: 300px;
+    }
+}
+
