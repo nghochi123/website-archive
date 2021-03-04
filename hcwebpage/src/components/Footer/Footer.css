@@ -2,10 +2,8 @@
     text-align: left;
 }
 
-.alignRight {
-    text-align: right;
-}
 @media(max-width:767px){
-    .footer-p::after{
+    .footer-p{
+        font-size: 12px;
     }
 }
