@@ -18,8 +18,7 @@ const Home = props => {
                     <Col className={styles.flex}>
                         <p className={styles.HomeText}>Hi, I'm Ho Chi</p>
                         <p className={styles.text}>I'm an incoming undergraduate at Nanyang Technological University studying Computer Science 
-                        under the CN Yang Scholarship. </p><p className={styles.text}>Currently, I'm interning as a Data Analyst at MOH, handling information related to the COVID
-                        situation in Singapore.</p>
+                        under the CN Yang Scholarship. </p>
                     </Col>
                 </Row>
             </Container>

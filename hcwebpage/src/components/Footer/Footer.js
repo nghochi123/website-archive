@@ -5,7 +5,6 @@ import './Footer.css'
 const Footer = (props) => {
     return (
         <div className="footer-p">
-            <p>Created using React</p>
             <p>Ho Chi 2021</p>
         </div>
         

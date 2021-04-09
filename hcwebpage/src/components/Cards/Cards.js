@@ -12,19 +12,29 @@ import expressImg from '../../resources/express.png';
 import pythonImg from '../../resources/python.png';
 import arduinoImg from '../../resources/arduino.png';
 import gitImg from '../../resources/git.png';
-import stataImg from '../../resources/stata.png'; 
+import stataImg from '../../resources/stata.png';
+import tsImg from '../../resources/Typescript_logo_2020.svg';
+import mongoImg from '../../resources/mongodb.jpg';
+import bootstrapImg from '../../resources/boostrap.png';
+import materialImg from '../../resources/materialui.svg'
 
 const Cards = (props) => {
     return (
         <Container>
             <Row className={styles.row}>
                 <Col className={styles.column}><Card title="Javascript" image={jsImg}/></Col>
+                <Col className={styles.column}><Card title="TypeScript" image={tsImg}></Card></Col>
+                <Col className={styles.column}><Card title="Git" image={gitImg}></Card></Col>
                 <Col className={styles.column}><Card title="React JS" image={reactImg}></Card></Col>
-                <Col className={styles.column}><Card title="Node JS" image={nodeImg}></Card></Col>
-                <Col className={styles.column}><Card title="Express" image={expressImg}></Card></Col>
             </Row>
             <Row className={styles.row}>
-                <Col className={styles.column}><Card title="Git" image={gitImg}></Card></Col>
+                <Col className={styles.column}><Card title="Node JS" image={nodeImg}></Card></Col>
+                <Col className={styles.column}><Card title="Express" image={expressImg}></Card></Col>
+                <Col className={styles.column}><Card title="MongoDB" image={mongoImg}/></Col>
+                <Col className={styles.column}><Card title="Material UI" image={materialImg}></Card></Col>
+            </Row>
+            <Row className={styles.row}>
+                <Col className={styles.column}><Card title="BootStrap" image={bootstrapImg}></Card></Col>
                 <Col className={styles.column}><Card title="Python" image={pythonImg}/></Col>
                 <Col className={styles.column}><Card title="Arduino" image={arduinoImg}></Card></Col>
                 <Col className={styles.column}><Card title="Stata" image={stataImg}></Card></Col>

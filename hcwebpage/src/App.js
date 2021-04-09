@@ -45,10 +45,10 @@ function App() {
   let height = "960px";
   let path = null;
   if(location.pathname === "/about"){
-    height = "2100px";
+    height = "2175px";
   }
   if(location.pathname==="/projects"){
-    height = "1050px";
+    height = "1200px";
   }
   if(location.pathname === "/"){
     path = "home";
