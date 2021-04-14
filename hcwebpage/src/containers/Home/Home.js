@@ -17,7 +17,7 @@ const Home = props => {
                         <p className={styles.text}>I'm an incoming undergraduate at Nanyang Technological University studying Computer Science 
                         under the CN Yang Scholarship. </p>
                         <p className={styles.text}>Looking for internship opportunities or projects to collaborate on wherever possible.</p>
-                        <Button size="lg" block style={{backgroundColor: '#2980b9', marginTop: '15px'}}>Download Resume</Button>
+                        <Button href='/resources/resume.docx' target="_blank" download size="lg" block style={{backgroundColor: '#2980b9', marginTop: '15px'}}>Download Resume</Button>
                     </Col>
                 </Row>
             </Container>
