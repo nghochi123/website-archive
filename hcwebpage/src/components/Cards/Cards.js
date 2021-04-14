@@ -31,12 +31,12 @@ const Cards = (props) => {
                 <Col className={styles.column}><Card title="Node JS" image={nodeImg}></Card></Col>
                 <Col className={styles.column}><Card title="Express" image={expressImg}></Card></Col>
                 <Col className={styles.column}><Card title="MongoDB" image={mongoImg}/></Col>
-                <Col className={styles.column}><Card title="Material UI" image={materialImg}></Card></Col>
+                <Col className={styles.column}><Card title="MySQL" image={mysqlImg}></Card></Col>
             </Row>
             <Row className={styles.row}>
                 <Col className={styles.column}><Card title="BootStrap" image={bootstrapImg}></Card></Col>
+                <Col className={styles.column}><Card title="Material UI" image={materialImg}></Card></Col>
                 <Col className={styles.column}><Card title="Python" image={pythonImg}/></Col>
-                <Col className={styles.column}><Card title="MySQL" image={mysqlImg}></Card></Col>
                 <Col className={styles.column}><Card title="Stata" image={stataImg}></Card></Col>
             </Row>
         </Container>
