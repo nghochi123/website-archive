@@ -10,7 +10,7 @@ import reactImg from '../../resources/react.png';
 import nodeImg from '../../resources/nodejs.png';
 import expressImg from '../../resources/express.png';
 import pythonImg from '../../resources/python.png';
-import arduinoImg from '../../resources/arduino.png';
+import mysqlImg from '../../resources/sql.svg';
 import gitImg from '../../resources/git.png';
 import stataImg from '../../resources/stata.png';
 import tsImg from '../../resources/Typescript_logo_2020.svg';
@@ -36,7 +36,7 @@ const Cards = (props) => {
             <Row className={styles.row}>
                 <Col className={styles.column}><Card title="BootStrap" image={bootstrapImg}></Card></Col>
                 <Col className={styles.column}><Card title="Python" image={pythonImg}/></Col>
-                <Col className={styles.column}><Card title="Arduino" image={arduinoImg}></Card></Col>
+                <Col className={styles.column}><Card title="MySQL" image={mysqlImg}></Card></Col>
                 <Col className={styles.column}><Card title="Stata" image={stataImg}></Card></Col>
             </Row>
         </Container>
