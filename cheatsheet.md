@@ -1,6 +1,6 @@
 # Cheatsheet
 
-A list of some of the important tools I use or follow in trying to hack something.
+A cheatsheet for use.
 
 ## Enumeration
 
