@@ -2,7 +2,8 @@
 
 A cheatsheet.
 
-### Table of Content
+### Table of Contents
+
 1. Enumeration
 2. Gaining Access and Information
 3. Escalating Privilege
@@ -42,16 +43,17 @@ Useful when the website is pre-built.
 
 ## Reverse shells
 
-Before using a reverse shell, edit the IP address to your local IP address, and the port to a unused port like 1337. Set up a netcat listener to that port. 
+Before using a reverse shell, edit the IP address to your local IP address, and the port to a unused port like 1337. Set up a netcat listener to that port.
 [PentestMonkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) has more information about reverse shells.
 
 ### Method 1 - Uploading the file to webserver and runnning it somehow
+
 E.g. If the website has an upload function and we have access (thru gobuster) to their file storage page, upload php reverse shell and run.
 
 **Bypassing filetype filters**
 
 - Client side bypass: Edit page source to allow .php types
-- Server side bypass: Use burpsuite to capture filter and edit it. 
+- Server side bypass: Use burpsuite to capture filter and edit it.
 - Weirdass bypass: Use alternative .php types such as .php2 .php3 .php4 .php5 .phtml
 
 ### Method 2 - Gain access to the target's command line terminal somehow
@@ -75,7 +77,7 @@ These attempt to log you in with simple sql queries. Only works if the sql query
 - ') or '1'='1--
 - ') or ('1'='1--
 
-If the above does not work, use sqlmap or [other payloads]( https://github.com/payloadbox/sql-injection-payload-list)
+If the above does not work, use sqlmap or [other payloads](https://github.com/payloadbox/sql-injection-payload-list)
 
 ## Service-side Request Forgery(SSRF) - Access internal database thru webserver requests
 
@@ -85,9 +87,9 @@ Bypass SSRF filter using \*.localtest.com
 
 ## Cookie Attack/Forgery
 
-Check developer options -> storage for cookies. 
+Check developer options -> storage for cookies.
 
-If the cookie is poorly encrypted and its value corresponds to username/password, we can impersonate admin or other users. 
+If the cookie is poorly encrypted and its value corresponds to username/password, we can impersonate admin or other users.
 
 ## Taking a closer look at the website
 
@@ -101,10 +103,9 @@ If the cookie is poorly encrypted and its value corresponds to username/password
 
 ## XML External Entity(XXE)
 
-Exploit this to access files in the server. 
+Exploit this to access files in the server.
 
 \<\!DOCTYPE foo \[ \<\!ENTITY xxe SYSTEM \"file:///etc/passwd\"\> \]\>
-
 
 # 3. Privilege Escalation
 
@@ -124,7 +125,6 @@ Other steps that are possible to check that I don't
 - Kernel exploits
 
 Also, other privesc scripts can be used, I just prefer linpeas because of the cute image at every boot.
-
 
 # 4. Information Analysis
 
@@ -146,14 +146,14 @@ Sometimes data will be encrypted or encoded. To decode basic forms, we can use [
 
 ### Hashes
 
-Haiti <hash> to identify hashes and its format code in JtR. 
-  
+Haiti <hash> to identify hashes and its format code in JtR.
+
 Looking at these [example hashes](https://gist.github.com/dwallraff/6a50b5d2649afeb1803757560c176401) might help.
-  
+
 Some hashes have salts in formats such as: hash:salt OR $version$salt$hash
 
 Crack hashes using dictionary attach with hashcat or john the ripper. Look up common hashes with [crackstation](crackstation.net)
-  
+
 For wordlists, use rockyou.txt or seclists.
 
 ### RSA
@@ -167,7 +167,7 @@ Basically, what happens is there's a private key and a public key, and our data 
 Public (x, y)
 
 Private (z, y)
-  
+
 The first user encrypts our data d with the public key. encrypted = (d^x)%y.
 
 The second user can decrypt this encrypted data doing: d = (encrypted^z)%y.
@@ -177,7 +177,7 @@ For the rest I know less about, so I'll just list some of them here:
 ### SSH Private keys (often .ssh/id_rsa)
 
 If we get access to this, we can use ssh2john and pass the hash into john the ripper to crack the passphrase (if any).
-  
+
 Copy the content of the key to the attacking machine and access the target through ssh with the -i flag.
 
 ### PGP
@@ -201,10 +201,10 @@ gpg2john and john the ripper
 - ExifTool (all image files, metadata)
 - Stegoveritas (all image files, basically all in one)
 - Sonic Visualiser (Analysis of .wav files)
-- Try putting the image in a browser and run it as \<script\>  (Polyglot)
+- Try putting the image in a browser and run it as \<script\> (Polyglot)
 
 ## OSINT
-  
+
 ### Openly Available identities
 
 - [namechk](https://namechk.com/)
@@ -223,10 +223,9 @@ gpg2john and john the ripper
 - cache: View google's Cached version of a url
 - intitle: phrase must appear in title of page
 - inrul: phrase must be in url (eg /cgi-bin)
-  
-  
+
 # 5. Other Information/Tools
-  
+
 ## Networking, file transfer and email
 
 - Wireshark (analyse packets)
@@ -236,6 +235,14 @@ gpg2john and john the ripper
   - Sometimes, for FTP, we can login anonymously, so this is abusable.
 - mount (allows us to mount ftp or smb things)
 
-## Active Directory
+## Windows
+
+### Powershell
+
+Some linux commands can be used in powershell, but each command is bound to a powershell cmdlet. For example, ls is bound to Get-ChildItem.
+
+We can find more [here](https://github.com/sans-blue-team/sec555-wiki/blob/master/Tools/PowerShell.md).
+
+### Active Directory
 
 https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a
