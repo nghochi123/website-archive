@@ -16,6 +16,7 @@ A cheatsheet.
 - wfuzz (fuzzing directories)
 - dirsearch (finding directories)
 - sublist3r (finding sub-domains, I don't use)
+- [online subdomain finder](https://subdomainfinder.c99.nl/)
 - enum4linux (if there's a SMB)
 - smbclient (connecting to SMB)
 - smbmap (SMB, I don't use)
@@ -216,13 +217,54 @@ gpg2john and john the ripper
 - [breach dictionary](https://breachdirectory.tk/)
 - [Scylla (under maintainance)](https://scylla.so/)
 
-### Google searching:
+### Google searching
 
 - site: specify domain name
 - filetype: search by file extension
 - cache: View google's Cached version of a url
 - intitle: phrase must appear in title of page
-- inrul: phrase must be in url (eg /cgi-bin)
+- inurl: phrase must be in url (eg /cgi-bin)
+  
+### Domain/website info lookup
+
+[Domain Name Registration Data](https://lookup.icann.org/lookup)
+
+[Internet archive/wayback machine](https://archive.org/)
+
+[DNS info lookup](https://viewdns.info/)
+
+[DNS info dump (if not sure what to look for)](https://dnsdumpster.com/)
+  
+[online subdomainfinder](https://subdomainfinder.c99.nl/)
+
+Dig command in linux (lookout for [zone transfer](https://digi.ninja/projects/zonetransferme.php) )
+
+### Reverse Index search
+  
+Yandex/Google/Tineye
+  
+[Latest street view info](https://www.mapillary.com/)
+
+### Website scraping
+  
+[spiderfoot](https://github.com/smicallef/spiderfoot.git)
+
+### IOT
+  
+[shodan](https://www.shodan.io/)
+  
+[BSSID/SSID lookup (for routers)](https://wigle.net/)
+
+^Both tools require registering before use
+
+### Social media scrapping
+  
+- theHarvester.py
+- sherlock.py
+  
+### Email tracing
+  
+[Trace email if you have the full email source](https://www.ip2location.com/free/email-tracer)
   
   
 # 5. Other Information/Tools
@@ -239,3 +281,7 @@ gpg2john and john the ripper
 ## Active Directory
 
 https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a
+  
+## Fixing broken/corrupted files
+  
+Find the correct [file signature/header](https://www.garykessler.net/library/file_sigs.html) and fix with [hex editor](https://hexed.it/) 
