@@ -1,13 +1,12 @@
 .background {
-    position: relative;
-    width: 100vw;
-    min-height:100vh;
-    height: 100%;
-    background: url(../../resources/paper.png) repeat;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  background: url(../../resources/paper.png) repeat;
 }
 
-@media(max-width:1000px){
-    .background{
-        background: none;
-    }
+@media (max-width: 1000px) {
+  .background {
+    background: none;
+  }
 }
