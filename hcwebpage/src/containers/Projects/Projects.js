@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import styles from "./Projects.module.css";
 
 import weatherImg from "../../resources/weather.png";
-import blogImg from "../../resources/blog.png";
+import generationImg from "../../resources/generation.png";
 import chatImg from "../../resources/chatapp.png";
 import visualisationImg from "../../resources/visualisation.png";
 import dbImg from "../../resources/db.png";
@@ -19,9 +19,18 @@ const Projects = (props) => {
       <Container>
         <h1 className={styles.submaintext}>Personal Projects</h1>
         <h3 className={styles.text}>
-          Click on the cards to view project demos (if any)
+          Click on the cards to view project demos
         </h3>
         <Row>
+          <Col>
+            <ProjectCard
+              img={visualisationImg}
+              link="https://hcvisualisation.netlify.app/"
+              sc="https://github.com/nghochi123/visualizer"
+              title="Algorithm Visualisation Tool"
+              text="An algorithm visualisation tool that currently has 4 sorting algorithms, as well as one pathfinding algorithm"
+            />
+          </Col>
           <Col>
             <ProjectCard
               img={boardImg}
@@ -38,15 +47,6 @@ const Projects = (props) => {
               sc="https://github.com/nghochi123/dbvis"
               title="Database Visualisation"
               text="A database diagram builder that can help visualise data relationships between tables in a relational database"
-            />
-          </Col>
-          <Col>
-            <ProjectCard
-              img={visualisationImg}
-              link="https://hcvisualisation.netlify.app/"
-              sc="https://github.com/nghochi123/visualizer"
-              title="Algorithm Visualisation Tool"
-              text="An algorithm visualisation tool that currently only has 4 sorting algorithms"
             />
           </Col>
         </Row>
@@ -72,11 +72,11 @@ const Projects = (props) => {
           </Col>
           <Col>
             <ProjectCard
-              img={blogImg}
-              link="https://nghochi-blog.netlify.app/"
-              sc="https://github.com/nghochi123/hc-blog"
-              title="Blog website"
-              text="A blog site built with Gatsby, using the React framework"
+              img={generationImg}
+              link="https://www.youtube.com/watch?v=h_8WtiIeOTU"
+              sc="https://github.com/BrainHack2021-Hackuna-Matata"
+              title="Generation"
+              text="A mobile app built during Brainhack 2021 to help elderly get accustomed to post-Covid life"
             />
           </Col>
         </Row>
