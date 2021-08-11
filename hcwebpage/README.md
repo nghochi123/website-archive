@@ -4,7 +4,7 @@ Hi, this is my attempt at making a personal website/app/portfolio using React.
 
 It's a minimalistic site that's hosted by Netlify. Was trying to experiment with the React-Spring library but I guess it was kind of overkill.
 
-[Website link](https://nghochi.netlify.app/)
+[Website link](https://nghochi.xyz/)
 
 All are welcome to visit and give criticism where necessary thanks.
 
@@ -15,6 +15,6 @@ give myself a good gauge of how much I've been improving so far, as well as to h
 
 ## Tech/Frameworks used
 
-* [React](https://reactjs.org/)
-* [Reactstrap (React implementation of Bootstrap)](https://reactstrap.github.io/)
-* [React Spring](https://www.react-spring.io/)
+- [React](https://reactjs.org/)
+- [Reactstrap (React implementation of Bootstrap)](https://reactstrap.github.io/)
+- [React Spring](https://www.react-spring.io/)
