@@ -18,14 +18,11 @@ const Projects = (props) => {
     <Layout>
       <Container>
         <h1 className={styles.submaintext}>Personal Projects</h1>
-        <h3 className={styles.text}>
-          Click on the cards to view project demos
-        </h3>
         <Row>
           <Col>
             <ProjectCard
               img={visualisationImg}
-              link="https://hcvisualisation.netlify.app/"
+              link="https://vis.nghochi.xyz/"
               sc="https://github.com/nghochi123/visualizer"
               title="Algorithm Visualisation Tool"
               text="An algorithm visualisation tool that currently has 4 sorting algorithms, as well as one pathfinding algorithm"

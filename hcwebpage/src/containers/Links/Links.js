@@ -45,7 +45,7 @@ const Projects = (props) => {
             </a>
           </Col>
           <Col className={styles.col}>
-            <a style={{ color: "#000" }} href="https://hochi-blog.netlify.app/">
+            <a style={{ color: "#000" }} href="https://blog.nghochi.xyz/">
               <FontAwesomeIcon
                 className={`${styles.icon} ${styles.mail}`}
                 icon={faBook}
